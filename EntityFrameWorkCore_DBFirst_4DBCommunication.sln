@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36511.14 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameWorkCore_DBFirst_4DBCommunication", "EntityFrameWorkCore_DBFirst_4DBCommunication\EntityFrameWorkCore_DBFirst_4DBCommunication.csproj", "{FD8CFF1D-9FFC-4CA7-8EF5-268111E0C736}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD8CFF1D-9FFC-4CA7-8EF5-268111E0C736}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD8CFF1D-9FFC-4CA7-8EF5-268111E0C736}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD8CFF1D-9FFC-4CA7-8EF5-268111E0C736}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD8CFF1D-9FFC-4CA7-8EF5-268111E0C736}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D05D3AD7-0C0F-44AA-96B4-D6C342C28E13}
+	EndGlobalSection
+EndGlobal
