@@ -3,6 +3,7 @@ using EntityFrameWorkCore_DBFirst_4DBCommunication.Interfaces;
 using EntityFrameWorkCore_DBFirst_4DBCommunication.MidlandModels;
 using EntityFrameWorkCore_DBFirst_4DBCommunication.NorthWind_DbModels;
 using EntityFrameWorkCore_DBFirst_4DBCommunication.Repositories;
+using EntityFrameWorkCore_DBFirst_4DBCommunication.RestaurantModels;
 using EntityFrameWorkCore_DBFirst_4DBCommunication.Services;
 using Microsoft.EntityFrameworkCore;
 
@@ -29,6 +30,10 @@ options.UseSqlServer(builder.Configuration.GetConnectionString("MIDLANDDbFirstAp
 builder.Services.AddDbContext<NorthwindDbContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("NorthWind_DbFirstApproachDatabase")));
 
+//this RestaurantDbContext is pointing this RestaurantDB_DbFirstApproachDatabase connection string in appsettings.json
+builder.Services.AddDbContext<RestaurantDbContext>(options =>
+options.UseSqlServer(builder.Configuration.GetConnectionString("RestaurantDB_DbFirstApproachDatabase")));
+
 //To implement the depency Injection must and stood register the interfacename,interfaceimplemented class here.
 //If you are not registered it will throw "System.InvalidOpertionException:Unable to reslove service type" Error
 //These interfaces we are injecting into controller constructor,to  implement the loosely coupling between the classes
@@ -42,6 +47,9 @@ builder.Services.AddScoped<IOrdersService, OrdersService>();
 //=======================***************************************************************************
 builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
 builder.Services.AddScoped<IDepartmentService, DepartmentService>();
+//=======================***************************************************************************
+builder.Services.AddScoped<IRestaurantRepository, RestaurantRepository>();
+builder.Services.AddScoped<IRestaurantService, RestaurantService>();
 //=======================***************************************************************************
 
 var app = builder.Build();
