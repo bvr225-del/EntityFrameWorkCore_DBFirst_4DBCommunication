@@ -1,6 +1,7 @@
 using EntityFrameWorkCore_DBFirst_4DBCommunication.hotelmanagementModels;
 using EntityFrameWorkCore_DBFirst_4DBCommunication.Interfaces;
 using EntityFrameWorkCore_DBFirst_4DBCommunication.MidlandModels;
+using EntityFrameWorkCore_DBFirst_4DBCommunication.NorthWind_DbModels;
 using EntityFrameWorkCore_DBFirst_4DBCommunication.Repositories;
 using EntityFrameWorkCore_DBFirst_4DBCommunication.Services;
 using Microsoft.EntityFrameworkCore;
@@ -23,6 +24,11 @@ options.UseSqlServer(builder.Configuration.GetConnectionString("HotelManagmentDb
 builder.Services.AddDbContext<MidlandContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("MIDLANDDbFirstApproachDatabase")));
 
+
+//this NorthwindDbContext is pointing this MIDLANDDbFirstApproachDatabase connection string in appsettings.json
+builder.Services.AddDbContext<NorthwindDbContext>(options =>
+options.UseSqlServer(builder.Configuration.GetConnectionString("NorthWind_DbFirstApproachDatabase")));
+
 //To implement the depency Injection must and stood register the interfacename,interfaceimplemented class here.
 //If you are not registered it will throw "System.InvalidOpertionException:Unable to reslove service type" Error
 //These interfaces we are injecting into controller constructor,to  implement the loosely coupling between the classes
@@ -33,6 +39,9 @@ builder.Services.AddScoped<IEmployeeService, EmployeeService>();
 //=======================***************************************************************************
 builder.Services.AddScoped<IOrdersRepository, OrdersRepository>();
 builder.Services.AddScoped<IOrdersService, OrdersService>();
+//=======================***************************************************************************
+builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
+builder.Services.AddScoped<IDepartmentService, DepartmentService>();
 //=======================***************************************************************************
 
 var app = builder.Build();
