@@ -3,6 +3,7 @@ using EntityFrameWorkCore_DBFirst_4DBCommunication.Interfaces;
 using EntityFrameWorkCore_DBFirst_4DBCommunication.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace EntityFrameWorkCore_DBFirst_4DBCommunication.Controllers
 {
@@ -127,3 +128,6 @@ namespace EntityFrameWorkCore_DBFirst_4DBCommunication.Controllers
 
     }
 }
+/*
+PM > Scaffold - DbContext "Server=DESKTOP-S8CP3CH;Database=hotelmanagement;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=True;" Microsoft.EntityFrameworkCore.SqlServer - OutputDir RestaurantModels
+*/

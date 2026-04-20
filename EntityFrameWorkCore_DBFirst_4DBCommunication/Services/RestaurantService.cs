@@ -55,7 +55,7 @@ namespace EntityFrameWorkCore_DBFirst_4DBCommunication.Services
                 resDto.Id = restaurant.Id;
                 resDto.RestaurantName = restaurant.RestaurantName;
                 resDto.RestaurantLocation = restaurant.RestaurantLocation;
-                resDto.CreationDate=restaurant.CreationDate;
+                resDto.CreationDate = restaurant.CreationDate;
                 listresdto.Add(resDto);//Add the orders to list here
 
             }

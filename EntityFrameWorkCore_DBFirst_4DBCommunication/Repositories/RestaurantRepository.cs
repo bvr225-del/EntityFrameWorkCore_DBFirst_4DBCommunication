@@ -76,7 +76,7 @@ namespace EntityFrameWorkCore_DBFirst_4DBCommunication.Repositories
             resResult.RestaurantName = resdetail.RestaurantName;
             resResult.RestaurantLocation = resdetail.RestaurantLocation;
             resResult.CreationDate = resdetail.CreationDate;
-            
+
             _restaurantDbContext.Restaurants.Update(resResult);
             await _restaurantDbContext.SaveChangesAsync();
             return true;

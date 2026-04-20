@@ -130,7 +130,7 @@ namespace EntityFrameWorkCore_DBFirst_4DBCommunication.Controllers
  * to implement db first approach use this command
  * ===================================================
  
-PM> Scaffold-DbContext "Server=DESKTOP-13B42NJ;Database=hotelmanagement;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir hotelmanagementModels
+PM> Scaffold-DbContext "Server=DESKTOP-S8CP3CH;Database=hotelmanagement;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir hotelmanagementModels
 =================================
 
 
