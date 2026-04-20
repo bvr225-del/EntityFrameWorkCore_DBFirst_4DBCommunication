@@ -127,3 +127,6 @@ namespace EntityFrameWorkCore_DBFirst_4DBCommunication.Controllers
 
     }
 }
+/*
+ * PM> Scaffold-DbContext "Server=DESKTOP-S8CP3CH;Database=Northwind_DB;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir MidlandModels
+*/

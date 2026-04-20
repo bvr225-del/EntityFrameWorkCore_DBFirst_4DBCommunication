@@ -130,7 +130,7 @@ namespace EntityFrameWorkCore_DBFirst_4DBCommunication.Controllers
 /* DbFirstApproach Scaffold-Statement:
  * ===================================
 
-PM> Scaffold-DbContext "Server=DESKTOP-13B42NJ;Database=Northwind_DB;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir NorthWind_DbModels
+PM> Scaffold-DbContext "Server=DESKTOP-S8CP3CH;Database=Northwind_DB;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir NorthWind_DbModels
 Build started...
 Build succeeded.
 To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
@@ -151,7 +151,7 @@ ONCE YOU ADD PRIMARY KEY,APPLY BELOW COMMAND.
 
 Run the same command again with -Force:(USE   -fORCE AT ENDING OF STATEMENT)IF ANY DB MODIFICATIONS PERFOMED AND TO EFFECT THOSE CHANGES TO OUR ENTITY CLASSES.
 ==========================================
-PM>Scaffold-DbContext "Server=DESKTOP-13B42NJ;Database=Northwind_DB;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir NorthWind_DbModels -Force
+PM>Scaffold-DbContext "Server=DESKTOP-S8CP3CH;Database=Northwind_DB;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir NorthWind_DbModels -Force
 =============================
 
 👉 -Force = overwrite existing models & DbContext

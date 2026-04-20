@@ -174,7 +174,7 @@ ONCE YOU ADD PRIMARY KEY,APPLY BELOW COMMAND.
 
 Run the same command again with -Force:(USE   -fORCE AT ENDING OF STATEMENT)IF ANY DB MODIFICATIONS PERFOMED AND TO EFFECT THOSE CHANGES TO OUR ENTITY CLASSES.
 ==========================================
-PM>Scaffold-DbContext "Server=DESKTOP-13B42NJ;Database=hotelmanagement;Trusted_Connection=True;TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir hotelmanagementModels -Force
+PM>Scaffold-DbContext "Server=DESKTOP-S8CP3CH;Database=hotelmanagement;Trusted_Connection=True;TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir hotelmanagementModels -Force
 =============================
 
 👉 -Force = overwrite existing models & DbContext
